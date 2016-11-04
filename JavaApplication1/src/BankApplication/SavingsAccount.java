@@ -25,12 +25,13 @@ public class SavingsAccount extends Account
     {
         float withdrawFee = amount * 0.15f;     
         charges += withdrawFee;
+        balance -= amount;
         if (balance <= 0)
         {
             System.out.println("Yoiu dont have enough funds to withdraw!");
             return;
         }
-        balance -= amount;
+        
     }
     
     @Override
