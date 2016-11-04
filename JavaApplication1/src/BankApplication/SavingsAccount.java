@@ -28,7 +28,7 @@ public class SavingsAccount extends Account
         balance -= amount;
         if (balance <= 0)
         {
-            System.out.println("Yoiu dont have enough funds to withdraw!");
+            System.out.println("You dont have enough funds to withdraw!");
             return;
         }
         
